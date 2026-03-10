@@ -33,6 +33,13 @@ Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCan
 #endregion
 
 #region Can Place Flowers
-Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],1)); // out: true
-Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],2)); // out: false
+// Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],1)); // out: true
+// Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],2)); // out: false
+#endregion
+
+
+#region Reverse Vowels Of A String
+Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("IceCreAm")); // AceCreIm
+Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("leetcode")); // out: leotcede
+Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("Marge, let's \"went.\" I await news telegram.")); // out: Marge, let's \"went.\" i awaIt news telegram.
 #endregion
