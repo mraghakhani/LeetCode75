@@ -39,7 +39,14 @@ Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCan
 
 
 #region Reverse Vowels Of A String
-Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("IceCreAm")); // AceCreIm
-Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("leetcode")); // out: leotcede
-Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("Marge, let's \"went.\" I await news telegram.")); // out: Marge, let's \"went.\" i awaIt news telegram.
+// Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("IceCreAm")); // AceCreIm
+// Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("leetcode")); // out: leotcede
+// Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("Marge, let's \"went.\" I await news telegram.")); // out: Marge, let's \"went.\" i awaIt news telegram.
+#endregion
+
+
+#region Reverse Words in a String
+Console.WriteLine(ReverseWordsInAString.ReverseWords("the sky is blue")); // blue is sky the
+Console.WriteLine(ReverseWordsInAString.ReverseWords("  hello world  ")); // out: world hello
+Console.WriteLine(ReverseWordsInAString.ReverseWords("a good   example")); // out: example good a
 #endregion
