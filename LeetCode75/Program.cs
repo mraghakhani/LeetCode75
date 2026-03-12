@@ -24,29 +24,41 @@ Console.WriteLine(GreatestCommonDivisorOfStrings.GcdOfStringsSecondTry("AAAAAB",
 #region Kids With the Greatest Number of Candies
 
 /*
-Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCandies([2,3,5,1,3], 3))); // out:[true,true,true,false,true]  
-Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCandies([4, 2, 1, 1, 2], 1))); // out: [true,false,false,false,false] 
+Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCandies([2,3,5,1,3], 3))); // out:[true,true,true,false,true]
+Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCandies([4, 2, 1, 1, 2], 1))); // out: [true,false,false,false,false]
 Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCandies([12,1,12], 10))); // out:  [true,false,true]
 */
-
 
 #endregion
 
 #region Can Place Flowers
+
 // Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],1)); // out: true
 // Console.WriteLine(CanPlaceFlowers.CanPlaceFlowersNonAdjacent([1,0,0,0,1],2)); // out: false
+
 #endregion
 
 
 #region Reverse Vowels Of A String
+
 // Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("IceCreAm")); // AceCreIm
 // Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("leetcode")); // out: leotcede
 // Console.WriteLine(ReverseVowelsOfAString.ReverseVowels("Marge, let's \"went.\" I await news telegram.")); // out: Marge, let's \"went.\" i awaIt news telegram.
+
 #endregion
 
 
 #region Reverse Words in a String
-Console.WriteLine(ReverseWordsInAString.ReverseWords("the sky is blue")); // blue is sky the
-Console.WriteLine(ReverseWordsInAString.ReverseWords("  hello world  ")); // out: world hello
-Console.WriteLine(ReverseWordsInAString.ReverseWords("a good   example")); // out: example good a
+
+// Console.WriteLine(ReverseWordsInAString.ReverseWords("the sky is blue")); // blue is sky the
+// Console.WriteLine(ReverseWordsInAString.ReverseWords("  hello world  ")); // out: world hello
+// Console.WriteLine(ReverseWordsInAString.ReverseWords("a good   example")); // out: example good a
+
+#endregion
+
+#region Product of Array Except Self
+
+Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([1, 2, 3, 4]))); // [24,12,8,6]
+Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([-1, 1, 0, -3, 3]))); // [0,0,9,0,0]
+
 #endregion
