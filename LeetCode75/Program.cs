@@ -58,7 +58,19 @@ Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCan
 
 #region Product of Array Except Self
 
-Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([1, 2, 3, 4]))); // [24,12,8,6]
-Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([-1, 1, 0, -3, 3]))); // [0,0,9,0,0]
+// Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([1, 2, 3, 4]))); // [24,12,8,6]
+// Console.WriteLine(string.Join(',',ProductOfArrayExceptSelf.ProductExceptSelf([-1, 1, 0, -3, 3]))); // [0,0,9,0,0]
+
+#endregion
+
+
+#region Increasing Triplet Subsequence
+
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([1, 2, 3, 4, 5])); // true
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([5, 4, 3, 2, 1])); // false
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([2, 1, 5, 0, 4, 6])); // true
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([20, 100, 10, 12, 5, 13])); // true
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([0, 4, 2, 1, 0, -1, -3])); // false
+Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([1, 1, -2, 6])); // false
 
 #endregion
