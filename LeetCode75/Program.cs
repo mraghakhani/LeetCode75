@@ -66,11 +66,21 @@ Console.WriteLine(string.Join(',',KidsWithTheGreatestNumberOfCandies.KidsWithCan
 
 #region Increasing Triplet Subsequence
 
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([1, 2, 3, 4, 5])); // true
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([5, 4, 3, 2, 1])); // false
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([2, 1, 5, 0, 4, 6])); // true
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([20, 100, 10, 12, 5, 13])); // true
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([0, 4, 2, 1, 0, -1, -3])); // false
-Console.WriteLine(IncreasingTripletSubsequence.IncreasingTriplet([1, 1, -2, 6])); // false
+/*Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([1, 2, 3, 4, 5])); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([5, 4, 3, 2, 1])); // false
+Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([2, 1, 5, 0, 4, 6])); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([20, 100, 10, 12, 5, 13])); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([0, 4, 2, 1, 0, -1, -3])); // false
+Console.WriteLine(IncreasingSubsequence.IncreasingTriplet([1, 1, -2, 6])); // false*/
+
+#endregion
+#region Increasing N Subsequence
+
+Console.WriteLine(IncreasingSubsequence.IncreasingN([1, 2, 3, 4, 5],3)); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingN([5, 4, 3, 2, 1],3)); // false
+Console.WriteLine(IncreasingSubsequence.IncreasingN([2, 1, 5, 0, 4, 6],3)); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingN([20, 100, 10, 12, 5, 13],3)); // true
+Console.WriteLine(IncreasingSubsequence.IncreasingN([0, 4, 2, 1, 0, -1, -3],3)); // false
+Console.WriteLine(IncreasingSubsequence.IncreasingN([1, 1, -2, 6],3)); // false
 
 #endregion
