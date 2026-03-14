@@ -1,6 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using LeetCode75.ArraysAndStrings;
+using LeetCode75.TwoPointers;
+
+#region ArraysAndStrings
 
 #region Merge Strings Alternately
 
@@ -85,8 +88,25 @@ Console.WriteLine(IncreasingSubsequence.IncreasingN([1, 1, -2, 6],3)); // false*
 
 #region String Compression
 
+/*
 Console.WriteLine(StringCompression.Compress(['a', 'a', 'b', 'b', 'c', 'c', 'c'])); // 6
 Console.WriteLine(StringCompression.Compress(['a'])); // 1
 Console.WriteLine(StringCompression.Compress(['a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'])); // 4
+*/
 
+#endregion
+
+#endregion
+
+#region Two Pointers
+
+int[] array = [0,1,0,3,12];
+MoveZeroes.MoveArrayZeroes(array);
+Console.WriteLine(string.Join(",", array)); // [1,3,12,0,0]
+int[] array3 = [1,0,1];
+MoveZeroes.MoveArrayZeroes(array3);
+Console.WriteLine(string.Join(",", array3)); // [1,3,12,0,0,0]
+int[] array2 = [0];
+MoveZeroes.MoveArrayZeroes(array2);
+Console.WriteLine(string.Join(",", array2)); // [0]
 #endregion
