@@ -100,13 +100,25 @@ Console.WriteLine(StringCompression.Compress(['a', 'b', 'b', 'b', 'b', 'b', 'b',
 
 #region Two Pointers
 
-int[] array = [0,1,0,3,12];
+#region MoveZeroes
+
+int[] array = [0, 1, 0, 3, 12];
 MoveZeroes.MoveArrayZeroes(array);
 Console.WriteLine(string.Join(",", array)); // [1,3,12,0,0]
-int[] array3 = [1,0,1];
+int[] array3 = [1, 0, 1];
 MoveZeroes.MoveArrayZeroes(array3);
 Console.WriteLine(string.Join(",", array3)); // [1,3,12,0,0,0]
 int[] array2 = [0];
 MoveZeroes.MoveArrayZeroes(array2);
 Console.WriteLine(string.Join(",", array2)); // [0]
+
+#endregion
+
+#region Is Subsequence
+
+Console.WriteLine(Subsequence.IsSubsequence("abc","ahbgdc")); // true
+Console.WriteLine(Subsequence.IsSubsequence("axc","ahbgdc")); // false
+
+#endregion
+
 #endregion
