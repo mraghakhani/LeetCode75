@@ -112,6 +112,7 @@ Console.WriteLine(StringCompression.Compress(['a', 'b', 'b', 'b', 'b', 'b', 'b',
 // MoveZeroes.MoveArrayZeroes(array2);
 // Console.WriteLine(string.Join(",", array2)); // [0]
 //
+
 #endregion
 
 #region Is Subsequence
@@ -121,16 +122,23 @@ Console.WriteLine(StringCompression.Compress(['a', 'b', 'b', 'b', 'b', 'b', 'b',
 
 #endregion
 
-#region Container with most water 
+#region Container with most water
 
+/*
 Console.WriteLine(ContainerWithMostWater.MaxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])); // 49
 Console.WriteLine(ContainerWithMostWater.MaxArea([1, 1])); // 1
 Console.WriteLine(ContainerWithMostWater.MaxArea([8,7,2,1])); // 7
+*/
 
+#endregion
+
+#region Max Number of K-Sum Pairs
+
+/*Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([1, 2, 3, 4], 5)); // 2
+Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([3, 1, 3, 4, 3], 6)); // 1*/
+// Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4], 2)); // 2
+Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([2, 2, 2, 3, 1, 1, 4, 1], 4)); // 2
 
 #endregion
 
 #endregion
-
-
-
