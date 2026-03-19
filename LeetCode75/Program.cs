@@ -142,6 +142,7 @@ Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([3, 1, 3, 4, 3], 6)); // 1*
 
 #endregion
 
+
 #endregion
 
 #region Sliding Window
@@ -153,6 +154,14 @@ Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage([1, 12, -5, -6, 50, 3],
 Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage([5], 1)); // 5.00000
 Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage([1,0,1,4,2], 4)); // 1.75
 */
+
+#endregion
+
+#region Maximum Number of Vowels in a Substring of Given Length
+
+Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("abciiidef", 3)); // 3
+Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("aeiou", 2)); // 2
+Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("leetcode", 3)); // 2
 
 #endregion
 
