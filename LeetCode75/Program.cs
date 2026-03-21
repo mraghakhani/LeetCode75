@@ -142,7 +142,6 @@ Console.WriteLine(MaxNumberOfKSumPairs.MaxOperations([3, 1, 3, 4, 3], 6)); // 1*
 
 #endregion
 
-
 #endregion
 
 #region Sliding Window
@@ -159,9 +158,30 @@ Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage([1,0,1,4,2], 4)); // 1.
 
 #region Maximum Number of Vowels in a Substring of Given Length
 
+/*
 Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("abciiidef", 3)); // 3
 Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("aeiou", 2)); // 2
 Console.WriteLine(MaximumNumberOfVowelsInASubstringOfGivenLength.MaxVowels("leetcode", 3)); // 2
+*/
+
+#endregion
+
+#region Max Consecutive Ones III
+
+/*
+Console.WriteLine("Max Consecutive Ones III");
+Console.WriteLine(MaxConsecutiveOnesIII.LongestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)); //6
+Console.WriteLine(MaxConsecutiveOnesIII.LongestOnes([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)); //10
+*/
+
+#endregion
+
+#region Longest Subarray of 1's After Deleting One Element
+
+Console.WriteLine("Longest Subarray of 1's After Deleting One Element");
+Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,0,1])); //3
+Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([0,1,1,1,0,1,1,0,1])); //5
+Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,1])); //2
 
 #endregion
 
