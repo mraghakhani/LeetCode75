@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using LeetCode75.ArraysAndStrings;
+using LeetCode75.PrefixSum;
 using LeetCode75.SlidingWindow;
 using LeetCode75.TwoPointers;
 
@@ -178,10 +179,34 @@ Console.WriteLine(MaxConsecutiveOnesIII.LongestOnes([0, 0, 1, 1, 0, 0, 1, 1, 1, 
 
 #region Longest Subarray of 1's After Deleting One Element
 
-Console.WriteLine("Longest Subarray of 1's After Deleting One Element");
-Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,0,1])); //3
+// Console.WriteLine("Longest Subarray of 1's After Deleting One Element");
+/*Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,0,1])); //3
 Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([0,1,1,1,0,1,1,0,1])); //5
-Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,1])); //2
+Console.WriteLine(LongestSubarrayOfOnes.LongestSubarray([1,1,1])); //2*/
+
+#endregion
+
+#endregion
+
+#region Prefix Sum
+
+#region Highest Altitude
+
+/*
+Console.WriteLine("Highest Altitude");
+Console.WriteLine(HighestAltitude.LargestAltitude([-5, 1, 5, 0, -7])); //1
+Console.WriteLine(HighestAltitude.LargestAltitude([-4, -3, -2, -1, 4, 3, 2])); //0
+*/
+
+#endregion
+
+#region Find Pivot Index
+
+Console.WriteLine("Find Pivot Index");
+Console.WriteLine(FindPivotIndex.PivotIndex([1, 7, 3, 6, 5, 6])); // 3
+Console.WriteLine(FindPivotIndex.PivotIndex([1,2,3])); // -1
+Console.WriteLine(FindPivotIndex.PivotIndex([2,1,-1])); // 0
+Console.WriteLine(FindPivotIndex.PivotIndex([-1,-1,0,1,1,0])); // 5
 
 #endregion
 
