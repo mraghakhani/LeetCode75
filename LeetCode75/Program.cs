@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using LeetCode75.ArraysAndStrings;
+using LeetCode75.HashMapSet;
 using LeetCode75.PrefixSum;
 using LeetCode75.SlidingWindow;
 using LeetCode75.TwoPointers;
@@ -202,11 +203,77 @@ Console.WriteLine(HighestAltitude.LargestAltitude([-4, -3, -2, -1, 4, 3, 2])); /
 
 #region Find Pivot Index
 
+/*
 Console.WriteLine("Find Pivot Index");
 Console.WriteLine(FindPivotIndex.PivotIndex([1, 7, 3, 6, 5, 6])); // 3
 Console.WriteLine(FindPivotIndex.PivotIndex([1,2,3])); // -1
 Console.WriteLine(FindPivotIndex.PivotIndex([2,1,-1])); // 0
 Console.WriteLine(FindPivotIndex.PivotIndex([-1,-1,0,1,1,0])); // 5
+*/
+
+#endregion
+
+#endregion
+
+#region Hash Map/Set
+
+#region Find the Difference of Two Arrays
+
+/*
+Console.WriteLine("Find the Difference of Two Arrays");
+var result1 = DifferenceOfTwoArrays.FindDifference([1, 2, 3], [2, 4, 6]); // [[1,3],[4,6]]
+Console.Write("[");
+for (int i = 0; i < result1.Count; i++)
+{
+    Console.Write("[");
+    for (int j = 0; j < result1[i].Count; j++)
+    {
+        if (j == result1[i].Count - 1)
+            Console.Write("{0}", result1[i][j]);
+        else
+            Console.Write("{0}, ", result1[i][j]);
+    }
+
+    if (i == result1.Count - 1)
+        Console.Write("]");
+    else
+        Console.Write("],");
+}
+
+Console.Write("]");
+Console.WriteLine();
+var result2 = DifferenceOfTwoArrays.FindDifference([1, 2, 3, 3], [1, 1, 2, 2]); // [[3],[]]
+Console.Write("[");
+for (int i = 0; i < result2.Count; i++)
+{
+    Console.Write("[");
+    for (int j = 0; j < result2[i].Count; j++)
+    {
+        if (j == result2[i].Count - 1)
+            Console.Write("{0}", result2[i][j]);
+        else
+            Console.Write("{0}, ", result2[i][j]);
+    }
+
+    if (i == result2.Count - 1)
+        Console.Write("]");
+    else
+        Console.Write("],");
+}
+
+Console.Write("]");
+Console.WriteLine();
+*/
+
+#endregion
+
+
+#region Unique Number of Occurrences
+
+Console.WriteLine("Unique Number of Occurrences");
+Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([1,2,2,1,1,3])); // true
+Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([1,2])); // true
+Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0])); // true
 
 #endregion
 
