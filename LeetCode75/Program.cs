@@ -270,10 +270,24 @@ Console.WriteLine();
 
 #region Unique Number of Occurrences
 
+/*
 Console.WriteLine("Unique Number of Occurrences");
 Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([1,2,2,1,1,3])); // true
 Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([1,2])); // true
 Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0])); // true
+*/
+
+#endregion
+
+
+#region Determine if Two Strings Are Close
+
+Console.WriteLine("Determine if Two Strings Are Close");
+Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("abc","bca")); //true
+Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("a","aa")); //false
+Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("cabbba","abbccc")); //true
+Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("cabbba","aabbss")); //false
+Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("abbzzca","babzzcz")); //false
 
 #endregion
 
