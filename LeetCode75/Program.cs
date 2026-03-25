@@ -282,12 +282,21 @@ Console.WriteLine(UniqueNumberOfOccurrences.UniqueOccurrences([-3,0,1,-3,1,1,1,-
 
 #region Determine if Two Strings Are Close
 
+/*
 Console.WriteLine("Determine if Two Strings Are Close");
 Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("abc","bca")); //true
 Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("a","aa")); //false
 Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("cabbba","abbccc")); //true
 Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("cabbba","aabbss")); //false
 Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("abbzzca","babzzcz")); //false
+*/
+
+#endregion
+
+#region Equal Row and Column Pairs
+
+Console.WriteLine(EqualRowAndColumnPairs.EqualPairs([[3,2,1],[1,7,6],[2,7,7]])); // 1
+Console.WriteLine(EqualRowAndColumnPairs.EqualPairs([[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]])); // 3
 
 #endregion
 
