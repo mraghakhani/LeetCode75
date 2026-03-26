@@ -4,6 +4,7 @@ using LeetCode75.ArraysAndStrings;
 using LeetCode75.HashMapSet;
 using LeetCode75.PrefixSum;
 using LeetCode75.SlidingWindow;
+using LeetCode75.Stack;
 using LeetCode75.TwoPointers;
 
 #region ArraysAndStrings
@@ -295,9 +296,24 @@ Console.WriteLine(DetermineIfTwoStringsAreClose.CloseStrings("abbzzca","babzzcz"
 
 #region Equal Row and Column Pairs
 
+/*
 Console.WriteLine(EqualRowAndColumnPairs.EqualPairs([[3,2,1],[1,7,6],[2,7,7]])); // 1
 Console.WriteLine(EqualRowAndColumnPairs.EqualPairs([[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]])); // 3
+*/
 
 #endregion
+
+#endregion
+
+
+#region Stack
+
+#region Removing Stars From a String
+
+Console.WriteLine(RemovingStarsFromAString.RemoveStars("leet**cod*e")); //"lecoe"
+Console.WriteLine(RemovingStarsFromAString.RemoveStars("erase*****")); //"erase*****"
+
+#endregion
+
 
 #endregion
