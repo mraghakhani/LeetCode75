@@ -2,8 +2,49 @@ namespace LeetCode75.HashMapSet;
 
 public class EqualRowAndColumnPairs
 {
-    // o(n^2) beats 83% 
+    // o(n^2) beats 98% 
     public static int EqualPairs(int[][] grid)
+    {
+        var n = grid.Length;
+        var map = new Dictionary<long, int>();
+
+        const long BASE = 131;
+
+        // 1. hash کردن row ها
+        for (var i = 0; i < n; i++)
+        {
+            long hash = 0;
+
+            for (var j = 0; j < n; j++)
+            {
+                hash = hash * BASE + grid[i][j];
+            }
+
+            if (!map.TryAdd(hash, 1))
+                map[hash]++;
+        }
+
+        var counter = 0;
+
+        for (var col = 0; col < n; col++)
+        {
+            long hash = 0;
+
+            for (var row = 0; row < n; row++)
+            {
+                hash = hash * BASE + grid[row][col];
+            }
+
+            if (map.TryGetValue(hash, out var count))
+            {
+                counter += count;
+            }
+        }
+
+        return counter;
+    }    
+    // o(n^2) beats 83% 
+    public static int EqualPairsSecondTry(int[][] grid)
     {
         var n = grid.Length;
         var map = new Dictionary<string, int>();
@@ -18,11 +59,11 @@ public class EqualRowAndColumnPairs
 
         var counter = 0;
 
-        for (int col = 0; col < n; col++)
+        for (var col = 0; col < n; col++)
         {
             var columnArray = new int[n];
 
-            for (int row = 0; row < n; row++)
+            for (var row = 0; row < n; row++)
             {
                 columnArray[row] = grid[row][col];
             }
