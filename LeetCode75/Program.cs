@@ -310,10 +310,20 @@ Console.WriteLine(EqualRowAndColumnPairs.EqualPairs([[3,1,2,2],[1,4,4,5],[2,4,2,
 
 #region Removing Stars From a String
 
+/*
 Console.WriteLine(RemovingStarsFromAString.RemoveStars("leet**cod*e")); //"lecoe"
 Console.WriteLine(RemovingStarsFromAString.RemoveStars("erase*****")); //"erase*****"
+*/
 
 #endregion
 
+#region Asteroid Collision
+
+Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([5, 10, -5]))); // [5,10]
+Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([8, -8]))); // []
+Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([10, 2, -5]))); // [10]
+Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([3, 5, -6, 2, -1, 4]))); // [-6,2,4]
+
+#endregion
 
 #endregion
