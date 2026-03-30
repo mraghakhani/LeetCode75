@@ -319,10 +319,21 @@ Console.WriteLine(RemovingStarsFromAString.RemoveStars("erase*****")); //"erase*
 
 #region Asteroid Collision
 
+/*
 Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([5, 10, -5]))); // [5,10]
 Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([8, -8]))); // []
 Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([10, 2, -5]))); // [10]
 Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([3, 5, -6, 2, -1, 4]))); // [-6,2,4]
+*/
+
+#endregion
+
+#region Decode String
+
+Console.WriteLine("Decode String");
+Console.WriteLine(StringDecode.DecodeString("3[a]2[bc]")); // "aaabcbc"
+Console.WriteLine(StringDecode.DecodeString("3[a2[c]]")); // "accaccacc"
+Console.WriteLine(StringDecode.DecodeString("2[abc]3[cd]ef")); // "abcabccdcdcdef"
 
 #endregion
 
