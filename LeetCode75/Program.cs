@@ -347,11 +347,20 @@ Console.WriteLine(StringDecode.DecodeString("2[abc]3[cd]ef")); // "abcabccdcdcde
 
 #region NumberOfRecentCalls
 
+/*
 var recentCounter = new NumberOfRecentCalls();
 Console.WriteLine(recentCounter.Ping(1)); // requests = [1], range is [-2999,1], return 1
 Console.WriteLine(recentCounter.Ping(100)); // requests = [1, 100], range is [-2900,100], return 2
 Console.WriteLine(recentCounter.Ping(3001)); // requests = [1, 100, 3001], range is [1,3001], return 3
 Console.WriteLine(recentCounter.Ping(3002)); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+*/
+
+#endregion
+
+#region Data2Senate
+
+Console.WriteLine(Data2Senate.PredictPartyVictory("RD")); // "Radiant"
+Console.WriteLine(Data2Senate.PredictPartyVictory("RDD")); // "Dire"
 
 #endregion
 
