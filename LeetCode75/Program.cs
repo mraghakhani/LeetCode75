@@ -359,9 +359,55 @@ Console.WriteLine(recentCounter.Ping(3002)); // requests = [1, 100, 3001, 3002],
 
 #region Data2Senate
 
+/*
 Console.WriteLine(Data2Senate.PredictPartyVictory("RD")); // "Radiant"
 Console.WriteLine(Data2Senate.PredictPartyVictory("RDD")); // "Dire"
+*/
 
 #endregion
 
+/*var head = new LeetCode75.LinkedList.ListNode();
+head.val = 2;
+head.next = new(){
+  val =1,
+  next = new(){
+    val = 3,
+    next = new() {
+      val = 5,
+      next = new(){
+        val= 6,
+        next = new (){
+          val = 4,
+          next = new(){
+            val = 7,
+            next = null
+          }
+        }
+      }
+    }
+  }
+};
+var res = LeetCode75.LinkedList.OddEven.OddEvenList(head); */
+
+
+
+var head = new LeetCode75.LinkedList.ListNode
+{
+    val =1,
+    next = new(){
+        val = 2,
+        next = new() {
+            val = 3,
+            next = new(){
+                val= 4,
+                next = new (){
+                    val = 5,
+                    next = null
+                }
+            }
+        }
+    }
+};
+var res = LeetCode75.LinkedList.ReverseLinkedList.ReverseList(head);
 #endregion
+
