@@ -3,6 +3,7 @@
 using LeetCode75.ArraysAndStrings;
 using LeetCode75.HashMapSet;
 using LeetCode75.PrefixSum;
+using LeetCode75.Queue;
 using LeetCode75.SlidingWindow;
 using LeetCode75.Stack;
 using LeetCode75.TwoPointers;
@@ -330,11 +331,83 @@ Console.WriteLine(string.Join(',', AsteroidCollisionProblem.AsteroidCollision([3
 
 #region Decode String
 
+/*
 Console.WriteLine("Decode String");
 Console.WriteLine(StringDecode.DecodeString("3[a]2[bc]")); // "aaabcbc"
 Console.WriteLine(StringDecode.DecodeString("3[a2[c]]")); // "accaccacc"
 Console.WriteLine(StringDecode.DecodeString("2[abc]3[cd]ef")); // "abcabccdcdcdef"
+*/
 
 #endregion
 
 #endregion
+
+
+#region Queue
+
+#region NumberOfRecentCalls
+
+/*
+var recentCounter = new NumberOfRecentCalls();
+Console.WriteLine(recentCounter.Ping(1)); // requests = [1], range is [-2999,1], return 1
+Console.WriteLine(recentCounter.Ping(100)); // requests = [1, 100], range is [-2900,100], return 2
+Console.WriteLine(recentCounter.Ping(3001)); // requests = [1, 100, 3001], range is [1,3001], return 3
+Console.WriteLine(recentCounter.Ping(3002)); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+*/
+
+#endregion
+
+#region Data2Senate
+
+/*
+Console.WriteLine(Data2Senate.PredictPartyVictory("RD")); // "Radiant"
+Console.WriteLine(Data2Senate.PredictPartyVictory("RDD")); // "Dire"
+*/
+
+#endregion
+
+/*var head = new LeetCode75.LinkedList.ListNode();
+head.val = 2;
+head.next = new(){
+  val =1,
+  next = new(){
+    val = 3,
+    next = new() {
+      val = 5,
+      next = new(){
+        val= 6,
+        next = new (){
+          val = 4,
+          next = new(){
+            val = 7,
+            next = null
+          }
+        }
+      }
+    }
+  }
+};
+var res = LeetCode75.LinkedList.OddEven.OddEvenList(head); */
+
+
+
+var head = new LeetCode75.LinkedList.ListNode
+{
+    val =1,
+    next = new(){
+        val = 2,
+        next = new() {
+            val = 3,
+            next = new(){
+                val= 4,
+                next = new (){
+                    val = 5,
+                    next = null
+                }
+            }
+        }
+    }
+};
+var res = LeetCode75.LinkedList.ReverseLinkedList.ReverseList(head);
+#endregion
+
